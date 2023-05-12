@@ -49,8 +49,15 @@ dd {
         <!--latest intersection talk-->
 
         <!--extrap/krylov from Paris-->
+        <dt><a href="conmccoid.github.io/Presentations/mccoid2023extrapolation.html">Extrapolation as non-linear Krylov</a>,
+          with Martin J. Gander</dt>
+        <dd>We examine extrapolation methods, Krylov subspace methods, and quasi-Newton methods, and show they are all linked through the multisecant equations.</dd>
 
         <!--visualization-->
+        <dt><a href="conmccoid.github.io/Presentations/CM2023.html">Visualization of simplicial intersections</dt>,
+          with Martin J. Gander</dt>
+        <dd>This talk presents a method for visualizing the intersection of simplices in general dimension.
+          This is a possibly useful tool for algorithm design and geometric proofs.</dd>
 
         <!--dd26 cycles-->
         <dt><a href="presentations/TALK_DD26_2020_cycles.pdf">Cycles in Newton-Raphson-accelerated Alternating Schwarz</a>,
