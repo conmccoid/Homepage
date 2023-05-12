@@ -1,0 +1,56 @@
+\documentclass[tikz]{standalone}
+\usetikzlibrary{calc}
+\begin{document}
+\newcommand{\RefTri}{
+	\draw[black, thick] (0,0) -- (0,3);
+    \draw[black, thick] (0,3) -- (3,0);
+    \draw[black, thick] (3,0) -- (0,0);
+    \filldraw[black] (0,0) circle (3pt);
+    \filldraw[black] (0,3) circle (3pt);
+    \filldraw[black] (3,0) circle (3pt);
+	}
+\newcommand{\Vertices}[2]{
+	\filldraw[black] \foreach \x in {#1} {(\x) circle (3pt)};
+	\filldraw[blue] \foreach \x in {#2} {(\x) circle (3pt)};
+	}
+\newcommand{\IntTri}[2]{
+	\draw[black,thick] (#1) \foreach \x in {#2} {-- (\x) } -- cycle;
+	}
+        \begin{tikzpicture}
+            % coord. set-up
+	\coordinate (Left1) at (0,1);
+	\coordinate (Left2) at (0,2);
+	\coordinate (Bot1) at (1,0);
+	\coordinate (Bot2) at (2,0);
+	\coordinate (Hyp1) at (2,1);
+	\coordinate (Hyp2) at (1,2);
+
+	\coordinate (Out1) at (-1,2);
+	\coordinate (Out2) at (2,-1);
+	\coordinate (Out3) at (2,2);
+	\coordinate (Out4) at (-1.5,1);
+	\coordinate (Out5) at (1,-1.5);
+	\coordinate (Out6) at (2,3);
+	\coordinate (Out7) at (3,2);
+	\coordinate (Out8) at (-1.5,-1.5);
+
+	\coordinate (In1) at (1,1);
+	\coordinate (In2) at (0.5,0.5);
+	\coordinate (In3) at (0.5,1.5);
+	\coordinate (In4) at (1.5,0.5);
+        
+        \matrix[column sep=1cm, row sep=1cm]
+        {
+	\RefTri \Vertices{In1,Out6,Out7}{Hyp1,Hyp2} \IntTri{In1}{Hyp2,Out6,Out7,Hyp1} &
+	\RefTri \Vertices{In2,In3,In4}{} \IntTri{In2}{In3,In4}; \\
+	\RefTri \Vertices{Out5,Out6,Out7}{Bot1,Bot2,Hyp1,Hyp2} \IntTri{Out5}{Bot1,Hyp2,Out6,Out7,Hyp1,Bot2} &
+	\RefTri \Vertices{In3,In4,Out3}{Hyp1,Hyp2} \IntTri{Out3}{Hyp1,In4,In3,Hyp2}; &
+	\RefTri \Vertices{In1,Out4,Out5}{Bot1,Left1} \IntTri{In1}{Bot1,Out5,Out4,Left1}; \\
+	\RefTri \Vertices{In2,Out2,Out1}{Left1,Left2,Bot1,Bot2} \IntTri{In2}{Left1,Out1,Left2,Bot2,Out2,Bot1} &
+	\RefTri \Vertices{In4,Out1,Out3}{Left1,Left2,Hyp1,Hyp2} \IntTri{In4}{Left1,Out1,Left2,Hyp2,Out3,Hyp1} &
+	\RefTri \Vertices{In3,In4,Out8}{Bot1,Left1} \IntTri{Out8}{Bot1,In4,In3,Left1} \\ &
+	\RefTri \Vertices{Out1,Out3,Out2}{Left1,Left2,Hyp1,Hyp2,Bot1,Bot2} \IntTri{Out1}{Out2,Out3} &
+	\RefTri \Vertices{Out8,In3,Out3}{Left1,Hyp2,Hyp1,Bot1} \IntTri{Out8}{Left1,In3,Hyp2,Out3,Hyp1,Bot1} \\
+        };
+        \end{tikzpicture}
+\end{document}

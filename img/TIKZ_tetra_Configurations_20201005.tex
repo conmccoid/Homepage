@@ -1,0 +1,51 @@
+\documentclass[tikz]{standalone}
+\usetikzlibrary{calc}
+\begin{document}
+\newcommand{\tetra}[2]{
+    \filldraw[black] \foreach \x in {#1} {(\x) circle (1.5pt)};
+    \filldraw[blue,fill opacity=0.2] (S1) -- (S2) -- (S3) -- (S4) -- cycle;
+    % \filldraw[blue] \foreach \x in {#1} \foreach \y in {#2} {($.5*(\x)+.5*(\y)$) circle (1.5pt)};
+    \filldraw[black] \foreach \x in {#2} {(\x) circle (1.5pt)};
+    }
+\newcommand{\blueplane}[4]{
+    \filldraw[blue,fill opacity=0.4] #1 -- #2 -- #3 -- #4 -- cycle;
+    }
+\newcommand{\redplanes}[4]{
+    \filldraw[black,fill opacity=0.2] #1 -- #2 -- #3 -- cycle;
+    \filldraw[black,fill opacity=0.2] #1 -- #2 -- #4 -- cycle;
+    \filldraw[black,fill opacity=0.2] #1 -- #3 -- #4 -- cycle;
+    }
+        \begin{tikzpicture}[scale=0.75]
+            % coord. set-up
+        \coordinate (A1) at (-1,-1);
+        \coordinate (B1) at (0,-0.75);
+        \coordinate (C1) at (-0.5,1);
+        \coordinate (D1) at (-1.5,0);
+
+        \coordinate (D2) at (2,-1);
+        \coordinate (B2) at (3,-0.75);
+        \coordinate (C2) at (2.5,1);
+        \coordinate (A2) at (3.5,0);
+        
+        \coordinate (S1) at (0,-2);
+        \coordinate (S2) at (0,2);
+        \coordinate (S3) at (2,1);
+        \coordinate (S4) at (2,-1);
+        
+        \coordinate (int1) at ($.5*(A1)+.5*(D2)$);
+        \coordinate (int2) at ($.5*(B1)+.5*(D2)$);
+        \coordinate (int3) at ($.5*(C1)+.5*(D2)$);
+        \coordinate (int4) at ($.5*(A1)+.5*(C2)$);
+        \coordinate (int5) at ($.5*(B1)+.5*(C2)$);
+        \coordinate (int6) at ($.5*(A1)+.5*(B2)$);
+        
+        \matrix[column sep=0.5cm, row sep=0.5cm]
+        {
+        \tetra{A1,B1,C1,D1}{} \redplanes{(A1)}{(D1)}{(C1)}{(B1)} \\
+        \tetra{A1,B1,C1}{D2} \redplanes{(A1)}{(B1)}{(C1)}{(D2)} \blueplane{(int1)}{(int2)}{(int3)}{(int3)} \\
+        \tetra{A1,B1}{C2,D2} \redplanes{(A1)}{(B1)}{(C2)}{(D2)} \blueplane{(int1)}{(int2)}{(int5)}{(int4)} \\
+        \tetra{A1}{B2,C2,D2} \redplanes{(A1)}{(B2)}{(C2)}{(D2)} \blueplane{(int1)}{(int4)}{(int6)}{(int6)} \\
+        \tetra{}{A2,B2,C2,D2} \redplanes{(A2)}{(B2)}{(C2)}{(D2)}\\
+        };
+        \end{tikzpicture}
+\end{document}

@@ -1,0 +1,159 @@
+/* Good colour choices:
+AliceBlue
+Azure
+CornflowerBlue
+Coral .. LightCoral
+Crimson
+DarkCyan
+DarkOrchid .. MediumOrchid .. Orchid
+DarkSeaGreen
+DarkSalmon .. LightSalmon .. Salmon
+DimGray
+DarkTurquoise .. MediumTurquoise .. PaleTurquoise .. Turquoise
+Lavender .. LavenderBlush
+LightBlue
+LightSteelBlue
+MediumSlateBlue
+MediumVioletRed .. PaleVioletRed
+Pink
+Plum
+RebeccaPurple
+*/
+
+:root {
+	--colour-unige: #cf0063;
+	--colour-math: #006a7d;
+	--colour-lavalmain: #e30513;
+	--colour-lavalsub: #ffc103;
+	--colour-lavalbg: #d9d9d9;
+
+	--colour-maintheme: MediumVioletRed;
+	--colour-motif: LavenderBlush;
+	/* --colour-footer: #212F3C; */
+	--colour-footer: DimGray;
+	--colour-link: LightSteelBlue;
+	--colour-visited: lightcoral;
+	--width-sidebar: 300px;
+	--height-footer: 180px;
+	--height-header: 180px;
+}
+
+/* Sidebar (background) */
+.sidebar {
+	height: 100%;
+	width: var(--width-sidebar); /* matches offset found in .main */
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-repeat: no-repeat;
+	background-size: auto 750px;
+	background-position: 0 0;
+	background-color: var(--colour-page);
+}
+
+.sidebar-background {
+	height: 100%;
+	margin: 20px 0 0 20px;
+	background-repeat: inherit;
+	background-size: inherit;
+	/*background-image: url(img/unige_logo_vert.svg); */
+}
+
+/* Sidebar Menu (with links) */
+.sidebar a {
+	position: relative;
+	float: right;
+	font-size: 20px;
+	right: -165px;
+	width: 200px;
+	border-radius: 15px 0 0 15px;
+	transition-duration: 0.5s;
+	margin-top: 10px;
+	padding: 10px 0 10px 10px;
+	background-color: var(--colour-motif);
+	color: var(--colour-maintheme);
+}
+
+.sidebar a i {
+	margin-right: 10px;
+}
+  
+.sidebar a:hover {
+	right: 0;
+}
+
+.sidebar a:visited {
+	color: var(--colour-visited);
+}
+
+/* Main body of content */
+.main {
+	min-height: 100%; /* content fits screen */
+	min-width: 500px; /* don't squash the content */
+	position: absolute;
+	left: var(--width-sidebar); /* length of sidebar, see above */
+	right: 0; /* fills width of screen */
+	z-index: 1;
+	background-color: white;
+	box-shadow: 0 0 20px;
+}
+
+.main-content {
+	max-width: 1000px; /* don't stretch content */
+	padding-left: 20px; /* dist. between sidebar and text */
+	padding-bottom: calc(var(--height-footer) + 20px);
+	padding-right: 20px; /* space on right side of page */
+}
+
+/* Headings */
+.topbox {
+	width: 100%; /* header is as wide as page */
+	height: var(--height-header);
+	background-color: var(--colour-page);
+}
+
+.topbox-heading {
+	color: var(--colour-motif);
+	padding: 20px;  /* dist. between sidebar and text */
+}
+
+/* Footer */
+.bottombox {
+	width: 100%; /* footer is as wide as page */
+	height: var(--height-footer); /* fixed height to fix position (see padding-bottom under main-content) */
+	position: absolute; /* position relative to .main */
+	bottom: 0; /* fix to bottom of content */
+	background-color: var(--colour-footer);
+	overflow: hidden; /* cut off so rest doesn't flow under */
+}
+
+.bottombox::after {
+	display: table;
+	clear: both;
+}
+
+.bottombox-column {
+	float: left;
+	color: black;
+	padding: 20px;
+	text-align: left;
+}
+
+.bottombox-column p {
+	padding: 0;
+	margin: 0;
+}
+
+.bottombox-column img {
+	margin-top: 15px; /* margin done by hand, prepare for problems */
+}
+
+.bottombox-column a:link {
+	color: var(--colour-link);
+}
+
+.bottombox-column a:visited {
+	color: var(--colour-visited);
+}
