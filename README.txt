@@ -86,10 +86,11 @@ These examples will follow a more rigorous naming convention than the code.
 
 %--Technical information
 
-Server: luniwebeol1.unige.ch
-Username: mccoid
+Server: IA-Hotel, 208.68.162.229
+Username: conormcc (password stored with Google)
 Connection type: SFTP
-Address of website: https://www.unige.ch/~mccoid
+FTP Hostname: ftp.conormccoid.com
+Address of website: http://www.conormccoid.com
 Address of files: /writable/public_html
 
 To access from Ubuntu, go to Other Locations then enter sftp://mccoid@luniwebeol1.unige.ch
