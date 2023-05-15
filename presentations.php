@@ -58,7 +58,7 @@ dd {
         <dd>We examine extrapolation methods, Krylov subspace methods, and quasi-Newton methods, and show they are all linked through the multisecant equations.</dd>
 
         <!--visualization-->
-        <dt><a href="https://conmccoid.github.io/Presentations/CM2023.html">Visualization of simplicial intersections</dt>,
+        <dt><a href="https://conmccoid.github.io/Presentations/CM2023.html">Visualization of simplicial intersections</a>,
           with Martin J. Gander</dt>
         <dd>This talk presents a method for visualizing the intersection of simplices in general dimension.
           This is a possibly useful tool for algorithm design and geometric proofs.</dd>
