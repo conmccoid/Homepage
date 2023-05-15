@@ -47,6 +47,10 @@ dd {
 	<h3>Talks</h3>
     <dl>
         <!--latest intersection talk-->
+        <dt><a href="pubs/TALK_CMS_ParSIA_20221203.pdf">Robust algorithm for the intersection of simplices</a>,
+          with Martin J. Gander</dt>
+        <dd>Simplices are the generalization of triangles to arbitrary dimension, and their intersections are considered in several applications.
+          This talk dissects an algorithm I developed to robustly calculate this intersection.</dd>
 
         <!--extrap/krylov from Paris-->
         <dt><a href="conmccoid.github.io/Presentations/mccoid2023extrapolation.html">Extrapolation as non-linear Krylov</a>,
