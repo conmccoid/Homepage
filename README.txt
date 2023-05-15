@@ -92,7 +92,3 @@ Connection type: SFTP
 FTP Hostname: ftp.conormccoid.com
 Address of website: http://www.conormccoid.com
 Address of files: /writable/public_html
-
-To access from Ubuntu, go to Other Locations then enter sftp://mccoid@luniwebeol1.unige.ch
-
-SSH keys should be available under the .ssh folder
