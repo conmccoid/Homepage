@@ -49,23 +49,36 @@ dd {
   <h3>Peer-reviewed</h3>
 
   <dl>
+    <dt><a href="pubs/mccoid2022chaotic.pdf">Cyclic and chaotic examples in Schwarz-preconditioned Newton methods</a>,
+      with Martin J. Gander, preprint, accepted to Domain Decomposition Methods in Science and Engineering XXVII (2023) <i class="ai ai-springer"></i></dt>
+    <dd>Accelerating domain decomposition methods with Newton's method is known to not have guaranteed convergence.
+Earlier work by the authors gave insight into why this occurs in 1D.
+This current paper expands on that work by considering the problem in higher dimensions.
+We provide a methodology for finding chaotic examples and highlight it with a particular counterexample.</dd>
+    
+    <dt><a href="https://www.sciencedirect.com/science/article/pii/S0024379523001301?casa_token=JCu_x6gV5xYAAAAA:rU47MpM6QGJJgYA9IhyrNgeI3E9CKNXMSa1rqeeTx1o5dw3BdhFD_Fn7AARw5s0Bylwp-2fc1iU">Extrapolation methods as nonlinear Krylov methods</a>,
+      with Martin J. Gander, preprint, accepted to Linear Algebra and its Applications (2023) <i class="ai ai-elsevier"></i></dt>
+    <dd>When applied to linear vector sequences, extrapolation methods are equivalent to Krylov subspace methods.
+    Both types of methods can be expressed as particular cases of the multisecant equations, the secant method 
+    generalized to higher dimensions. Through these equations, there is also equivalence with a variety of 
+    quasi-Newton methods. This paper presents a framework to connect these various methods.</dd>
+
+    <dt><a href="http://www.ddm.org/DD26/proceedings/255.pdf">Cycles in Newton-Raphson preconditioned by Schwarz (ASPIN and its cousins)</a>
+      with Martin J. Gander, Domain Decomposition Methods in Science and Engineering XXVI (2023) <i class="ai ai-springer"></i></dt>
+    <dd>Newton-Raphson preconditioned by Schwarz methods does not have sufficient convergence criteria.
+We explore an alternating Schwarz method accelerated by Newton-Raphson to find an example where the underlying Schwarz method converges but the Newton-Raphson acceleration fails.
+Alternating Schwarz is posed as a fixed point iteration to make use of theory for generic root-finding methods.
+An algorithm is proposed combining several aspects of this theory and others to guarantee convergence.</dd>
+
     <!--triangles paper, update pdf, check rights-->
     <dt><a href="pubs/PRE_mccoid2021provably.pdf">A provably robust algorithm for triangle-triangle intersections in floating point arithmetic</a>,
-      with Martin J. Gander, preprint, submitted to TOMS (2021)</dt>
+      with Martin J. Gander, Trans. on Mathematical Software, 48(2) (2022) <i class="ai ai-acm"></i></dt>
     <dd>Motivated by the unexpected failure of the triangle intersection component of the Projection Algorithm for
     Nonmatching Grids (PANG), this article provides a robust version with proof of backward stability. The new
     triangle intersection algorithm ensures consistency and parsimony across three types of calculations. The set
     of intersections produced by the algorithm, called representations, is shown to match the set of geometric
     intersections, called models. The article concludes with a comparison between the old and new intersection
     algorithms for PANG using an example found to reliably generate failures in the former.</dd>
-
-    <!--dd26 proceedings, update pdf, check rights-->
-    <dt><a href="pubs/mccoid2021cycles.pdf">Cycles in Newton-Raphson preconditioned by Schwarz (ASPIN and its cousins)</a>
-      with Martin J. Gander, preprint, submitted to DD26 proceedings (2021)</dt>
-    <dd>Newton-Raphson preconditioned by Schwarz methods does not have sufficient convergence criteria.
-We explore an alternating Schwarz method accelerated by Newton-Raphson to find an example where the underlying Schwarz method converges but the Newton-Raphson acceleration fails.
-Alternating Schwarz is posed as a fixed point iteration to make use of theory for generic root-finding methods.
-An algorithm is proposed combining several aspects of this theory and others to guarantee convergence.</dd>
 
     <dt><a href="pubs/mccoid2019improved.pdf">Improved Resolution of Boundary Layers for Spectral Collocation</a>,
       with Manfred Trummer, SIAM J. Sci. Comput. 41-5 (2019)</dt>
@@ -80,7 +93,7 @@ An algorithm is proposed combining several aspects of this theory and others to 
       accuracy provided the regularization parameter is chosen from an optimal range.</dd>
 
     <dt><a href="http://rdcu.be/BfA4">Preconditioning of spectral methods via Birkhoff interpolation</a>, 
-      with Manfred Trummer, Numerical Algorithms, 79(2), 555-573 (2018)</dt>
+      with Manfred Trummer, Numerical Algorithms, 79(2), 555-573 (2018) <i class="ai ai-springer"></i></dt>
     <dd>High-order differentiation matrices as calculated in spectral collocation methods 
       usually include a large round-off error and have a large condition number 
       (Baltensperger and Berrut Computers and Mathematics with Applications 37(1), 41– 48 1999; 
@@ -96,18 +109,24 @@ An algorithm is proposed combining several aspects of this theory and others to 
       compared to other methods.</dd>
   </dl>
   
+  <!--
   <h3>Submitted for review</h3>
 
-  <dl>
-    <!--dd27 proceedings-->
-    
+  <dl>    
   </dl>
+-->
 
-  <h3>Other</h3>
+  <h3>Theses</h3>
 
   <dl>
+    <dt><a href="https://archive-ouverte.unige.ch/unige:164515">Towards robustness in algorithms: accelerated domain decomposition, multisecant equations, and simplicial intersections</a>,
+    PhD thesis, supervised by Martin J. Gander, Universit&eacute; de Gen&egrave;ve (2022)</dt>
+    <dd>This thesis can be divided into three parts: cycles in domain decomposition methods; 
+      the equivalence between extrapolation methods and Krylov subspace methods, and; the 
+      intersection of simplices.</dd>
+
     <dt><a href="pubs/mccoid2018spectral.pdf">Spectral Differentiation: Integration and Inversion</a>,
-    masters thesis, Simon Fraser University (2018)</dt>
+    masters thesis, supervised by Manfred Trummer, Simon Fraser University (2018)</dt>
     <dd>Pseudospectral differentiation matrices suffer from large round-off error, and give
        rise to illconditioned systems used to solve differential equations numerically. This 
        thesis presents two
