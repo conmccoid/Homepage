@@ -23,11 +23,11 @@ Office address should appear as well, but not phone number (office phone as a po
 
 ### Technical information
 
-Server: IA-Hotel, 208.68.162.229
-Connection type: SFTP
-FTP Hostname: ftp.conormccoid.com
-Address of website: http://www.conormccoid.com
-Address of files: /writable/public_html
+- Server: IA-Hotel, 208.68.162.229
+- Connection type: SFTP
+- FTP Hostname: ftp.conormccoid.com
+- Address of website: http://www.conormccoid.com
+- Address of files: /writable/public_html
 
 ## Naming conventions and best practices
 ### Images
