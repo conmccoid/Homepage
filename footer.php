@@ -17,7 +17,8 @@
   </div>
   <div class=\"bottombox-column\">
     <h3>Academic Profiles</h3>
-    <p><i class=\"fab fa-orcid\"></i> <a href=\"https://orcid.org/0000-0002-2592-5005\">ORCID</a></p> <br>
+    <p><i class=\"fab fa-orcid\"></i> <a href=\"https://orcid.org/0000-0002-2592-5005\">ORCID</a></p>
     <p><i class=\"ai ai-google-scholar\"></i> <a href=\"https://scholar.google.com/citations?hl=en&user=DV1_3tAAAAAJ\">Google Scholar</a></p>
+    <p><i class=\"fab fa-github\"></i> <a href=\"https://github.com/conmccoid\">Github</a></p>
   </div> <!--add instagram and other socials? github, google scholar-->
 </div>"?>

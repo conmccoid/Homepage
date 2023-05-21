@@ -10,9 +10,11 @@
     <a href=\"presentations.php\" title=\"Presentations\">
       <i class=\"fas fa-photo-video fa-fw\"></i>Presentations
     </a>
+    <!--
     <a href=\"ongoing.php\" title=\"Ongoing\">
       <i class=\"fas fa-microscope fa-fw\"></i>Ongoing
     </a>
+    -->
     <a href=\"interactive.php\" title=\"Interactive\">
       <i class=\"fas fa-code fa-fw\"></i>Interactive
     </a>
