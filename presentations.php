@@ -46,6 +46,12 @@ dd {
     <h1>Presentations</h1>
 	<h3>Talks</h3>
     <dl>
+        <dt><a href="https://conmccoid.github.io/Presentations/AOSM.html">Adaptive optimised Schwarz methods</a>,
+          with Felix Kwok</dt>
+        <dd>Optimising Schwarz methods can be expensive and time-consuming. AOSMs optimise adaptively, which can be done without
+          any knowledge of the problem.
+        </dd>
+
         <!--latest intersection talk-->
         <dt><a href="pubs/TALK_CMS_ParSIA_20221203.pdf">Robust algorithm for the intersection of simplices</a>,
           with Martin J. Gander</dt>
