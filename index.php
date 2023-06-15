@@ -52,20 +52,20 @@ dd {
   <dt>Spectral collocation</dt>
   <dd>During my masters at Simon Fraser University I worked on pseudospectral integration matrices.
     These matrices are inverses of differentiation matrices constructed using collocation methods.
-    I am currently working on extending these ideas to invert more general linear operators (see Ongoing).
+    I am currently working on extending these ideas to invert more general linear operators.
   </dd>
   <dd>I have also helped develop an algorithm for improving the accuracy for these methods
-    in the context of singularly perturbed two-point boundary value problems (see Publicatons).
+    in the context of singularly perturbed two-point boundary value problems (see <a href="publications.php" title="Publications">Publicatons</a>).
   </dd>
 
   <dt>Domain decomposition</dt>
   <dd>My PhD work at the University of Geneva involves domain decomposition.
-    I am investigating examples of bad behaviour in Schwarz methods accelerated by the Newton-Raphson method (see Presentations).
+    I am investigating examples of bad behaviour in Schwarz methods accelerated by the Newton-Raphson method (see <a href="publications.php" title="Publications">Presentations</a>).
   </dd>
   <dd>I am also constructing algorithms for the intersection of 2D and 3D objects
     to assist in solving grid transfer problems.
     Our paper on the intersection of triangles is published in Transactions on Mathematical Software, an ACM journal.
-    The intersection of tetrahedra and higher dimensional simplices are in progress (see Ongoing).
+    The intersection of tetrahedra and higher dimensional simplices are in progress.
   </dd>
   <dd>
     At the Universit&eacute; Laval I am developing algorithms for adaptively optimising existing Schwarz methods.
