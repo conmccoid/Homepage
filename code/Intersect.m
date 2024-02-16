@@ -34,7 +34,7 @@ v2=V(:,3)-V(:,1);               % vector between V1 and V3
 X=[v1,v2]\(U-V(:,1));           % Step 1: change of coordinates
 p=[X([2,1],:);1-X(1,:)-X(2,:)]; % values of the parameters p
 sp=sign(p)>=0;                  % sign of the p values
-D=cross([X(1,:);1-X(1,:);X(1,:)],[X(2,:);X(2,:);1-X(2,:)],2); % num.s of q0 and 1-q0
+D=cross([X(1,:);1-X(1,:)-X(2,:);X(1,:)],[X(2,:);X(2,:);1-X(1,:)-X(2,:)],2); % num.s of q0 and 1-q0
 Q=zeros(2,9); indQ=zeros(1,9); n=zeros(1,3); indR=ones(3);
 for i=1:3                       % Step 2: select ref. line
     ind=(1:3) + 3*(i-1);        % indices of Q for this ref. line

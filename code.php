@@ -59,6 +59,9 @@ dd {
   <dd>See the preprint "A provably robust algorithm for triangle-triangle intersections in floating point arithmetic" for more information (filed under Publications).
    A working example is presented <a href="interact/triangles/html/exampleCircle.html">here</a>.
   </dd>
+
+  <dt><a href="code/TriIntersect.m">TriIntersect.m</a></dt>
+  <dd>An update (13.7.2023) to the subfunction TriIntersect, which calculates the intersection of triangles. This verison is significantly faster.</dd>
 </dl>
 
 </div>

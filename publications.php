@@ -79,6 +79,9 @@ An algorithm is proposed combining several aspects of this theory and others to 
     of intersections produced by the algorithm, called representations, is shown to match the set of geometric
     intersections, called models. The article concludes with a comparison between the old and new intersection
     algorithms for PANG using an example found to reliably generate failures in the former.</dd>
+    <dd>Since publication, I have written a new, more efficient version of the algorithm which performs
+      the smallest number of calculations. It can be found <a href="code/TriIntersect.m">here</a> and is also available on the <a href="code.php">Code page</a>.
+    </dd>
 
     <dt><a href="pubs/mccoid2019improved.pdf">Improved Resolution of Boundary Layers for Spectral Collocation</a>,
       with Manfred Trummer, SIAM J. Sci. Comput. 41-5 (2019)</dt>
