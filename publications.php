@@ -48,6 +48,9 @@ dd {
 
   <h3>Peer-reviewed</h3>
 
+    <p>Manuscripts found on this page are accepted preprints. They are made available under the <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 license</a>,
+    unless noted otherwise. For versions of record, please see individual publishers. Where available, DOI links are provided.</p>
+
   <dl>
     <dt><a href="pubs/mccoid2022chaotic.pdf">Cyclic and chaotic examples in Schwarz-preconditioned Newton methods</a>,
       with Martin J. Gander, preprint, accepted to Domain Decomposition Methods in Science and Engineering XXVII (2023) <i class="ai ai-springer"></i></dt>
@@ -56,14 +59,15 @@ Earlier work by the authors gave insight into why this occurs in 1D.
 This current paper expands on that work by considering the problem in higher dimensions.
 We provide a methodology for finding chaotic examples and highlight it with a particular counterexample.</dd>
     
-    <dt><a href="https://www.sciencedirect.com/science/article/pii/S0024379523001301?casa_token=JCu_x6gV5xYAAAAA:rU47MpM6QGJJgYA9IhyrNgeI3E9CKNXMSa1rqeeTx1o5dw3BdhFD_Fn7AARw5s0Bylwp-2fc1iU">Extrapolation methods as nonlinear Krylov methods</a>,
-      with Martin J. Gander, preprint, accepted to Linear Algebra and its Applications (2023) <i class="ai ai-elsevier"></i></dt>
+    <dt><a href="pubs/mccoid2022extrapolation.pdf">Extrapolation methods as nonlinear Krylov methods</a>,
+      with Martin J. Gander, <a href="https://www.sciencedirect.com/science/article/pii/S0024379523001301?casa_token=JCu_x6gV5xYAAAAA:rU47MpM6QGJJgYA9IhyrNgeI3E9CKNXMSa1rqeeTx1o5dw3BdhFD_Fn7AARw5s0Bylwp-2fc1iU">Linear Algebra and its Applications</a> (2023) <i class="ai ai-elsevier"></i> <i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i><i class="fa-brands fa-creative-commons-nd"></i></dt>
     <dd>When applied to linear vector sequences, extrapolation methods are equivalent to Krylov subspace methods.
     Both types of methods can be expressed as particular cases of the multisecant equations, the secant method 
     generalized to higher dimensions. Through these equations, there is also equivalence with a variety of 
     quasi-Newton methods. This paper presents a framework to connect these various methods.</dd>
+    <dd>
 
-    <dt><a href="http://www.ddm.org/DD26/proceedings/255.pdf">Cycles in Newton-Raphson preconditioned by Schwarz (ASPIN and its cousins)</a>
+    <dt><a href="pubs/mccoid2021cycles.pdf">Cycles in Newton-Raphson preconditioned by Schwarz (ASPIN and its cousins)</a>
       with Martin J. Gander, Domain Decomposition Methods in Science and Engineering XXVI (2023) <i class="ai ai-springer"></i></dt>
     <dd>Newton-Raphson preconditioned by Schwarz methods does not have sufficient convergence criteria.
 We explore an alternating Schwarz method accelerated by Newton-Raphson to find an example where the underlying Schwarz method converges but the Newton-Raphson acceleration fails.
@@ -72,7 +76,7 @@ An algorithm is proposed combining several aspects of this theory and others to 
 
     <!--triangles paper, update pdf, check rights-->
     <dt><a href="pubs/PRE_mccoid2021provably.pdf">A provably robust algorithm for triangle-triangle intersections in floating point arithmetic</a>,
-      with Martin J. Gander, Trans. on Mathematical Software, 48(2) (2022) <i class="ai ai-acm"></i></dt>
+      with Martin J. Gander, <a href="https://doi.acm.org?doi=3513264">Trans. on Mathematical Software</a>, 48(2) (2022) <i class="ai ai-acm"><i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i></dt>
     <dd>Motivated by the unexpected failure of the triangle intersection component of the Projection Algorithm for
     Nonmatching Grids (PANG), this article provides a robust version with proof of backward stability. The new
     triangle intersection algorithm ensures consistency and parsimony across three types of calculations. The set
