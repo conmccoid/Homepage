@@ -60,7 +60,7 @@ This current paper expands on that work by considering the problem in higher dim
 We provide a methodology for finding chaotic examples and highlight it with a particular counterexample.</dd>
     
     <dt><a href="pubs/mccoid2022extrapolation.pdf">Extrapolation methods as nonlinear Krylov methods</a>,
-      with Martin J. Gander, <a href="https://www.sciencedirect.com/science/article/pii/S0024379523001301?casa_token=JCu_x6gV5xYAAAAA:rU47MpM6QGJJgYA9IhyrNgeI3E9CKNXMSa1rqeeTx1o5dw3BdhFD_Fn7AARw5s0Bylwp-2fc1iU">Linear Algebra and its Applications</a> (2023) <i class="ai ai-elsevier"></i> <i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i><i class="fa-brands fa-creative-commons-nd"></i></dt>
+      with Martin J. Gander, <a href="https://www.sciencedirect.com/science/article/pii/S0024379523001301?casa_token=JCu_x6gV5xYAAAAA:rU47MpM6QGJJgYA9IhyrNgeI3E9CKNXMSa1rqeeTx1o5dw3BdhFD_Fn7AARw5s0Bylwp-2fc1iU">Linear Algebra and its Applications</a> (2023) <i class="ai ai-elsevier"></i> <i class="fab fa-creative-commons-by"></i><i class="fab fa-creative-commons-nc"></i><i class="fab fa-creative-commons-nd"></i></dt>
     <dd>When applied to linear vector sequences, extrapolation methods are equivalent to Krylov subspace methods.
     Both types of methods can be expressed as particular cases of the multisecant equations, the secant method 
     generalized to higher dimensions. Through these equations, there is also equivalence with a variety of 
@@ -76,7 +76,7 @@ An algorithm is proposed combining several aspects of this theory and others to 
 
     <!--triangles paper, update pdf, check rights-->
     <dt><a href="pubs/PRE_mccoid2021provably.pdf">A provably robust algorithm for triangle-triangle intersections in floating point arithmetic</a>,
-      with Martin J. Gander, <a href="https://doi.acm.org?doi=3513264">Trans. on Mathematical Software</a>, 48(2) (2022) <i class="ai ai-acm"></i> <i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i></dt>
+      with Martin J. Gander, <a href="https://doi.acm.org?doi=3513264">Trans. on Mathematical Software</a>, 48(2) (2022) <i class="ai ai-acm"></i> <i class="fab fa-creative-commons-by"></i><i class="fab fa-creative-commons-nc"></i></dt>
     <dd>Motivated by the unexpected failure of the triangle intersection component of the Projection Algorithm for
     Nonmatching Grids (PANG), this article provides a robust version with proof of backward stability. The new
     triangle intersection algorithm ensures consistency and parsimony across three types of calculations. The set
