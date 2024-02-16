@@ -42,9 +42,8 @@ dd {
 <?php require_once "header.php";?>
 
 <div class="main-content">
-    <h3><a href="geogebra.php">GeoGebra demo of PANG2</a></h3>
-    <h3><a href="mem.php">Mozart Ex Machina</a></h3>
-      <p>Machine learning prototyping project</p>
+    <h1>GeoGebra demo of PANG2</h1>
+    <iframe src="https://www.geogebra.org/calculator/gn2p9mxu?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 </div>
 
 <?php require_once "footer.php" ?>

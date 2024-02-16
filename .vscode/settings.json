@@ -1,0 +1,4 @@
+{
+    "cmake.configureOnOpen": false,
+    "php.version": "8.3"
+}
