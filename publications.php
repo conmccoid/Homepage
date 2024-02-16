@@ -76,7 +76,7 @@ An algorithm is proposed combining several aspects of this theory and others to 
 
     <!--triangles paper, update pdf, check rights-->
     <dt><a href="pubs/PRE_mccoid2021provably.pdf">A provably robust algorithm for triangle-triangle intersections in floating point arithmetic</a>,
-      with Martin J. Gander, <a href="https://doi.acm.org?doi=3513264">Trans. on Mathematical Software</a>, 48(2) (2022) <i class="ai ai-acm"><i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i></dt>
+      with Martin J. Gander, <a href="https://doi.acm.org?doi=3513264">Trans. on Mathematical Software</a>, 48(2) (2022) <i class="ai ai-acm"></i> <i class="fa-brands fa-creative-commons-by"></i><i class="fa-brands fa-creative-commons-nc"></i></dt>
     <dd>Motivated by the unexpected failure of the triangle intersection component of the Projection Algorithm for
     Nonmatching Grids (PANG), this article provides a robust version with proof of backward stability. The new
     triangle intersection algorithm ensures consistency and parsimony across three types of calculations. The set
