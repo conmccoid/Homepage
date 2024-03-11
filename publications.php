@@ -83,6 +83,7 @@ An algorithm is proposed combining several aspects of this theory and others to 
     of intersections produced by the algorithm, called representations, is shown to match the set of geometric
     intersections, called models. The article concludes with a comparison between the old and new intersection
     algorithms for PANG using an example found to reliably generate failures in the former.</dd>
+    <dd>See the <a href="https://www.growkudos.com/publications/10.1145%25252F3513264/reader">Kudos</a> page for a lay explanation of the algorithm.</dd>
     <dd>Since publication, I have written a new, more efficient version of the algorithm which performs
       the smallest number of calculations. It can be found <a href="code/TriIntersect.m">here</a> and is also available on the <a href="code.php">Code page</a>.
     </dd>
