@@ -215,12 +215,12 @@ dd {
       The tree may continue to grow, adding more decision nodes to further refine its categorization.
     </p>
     <p>There are four main parameters to tweak for this model:</p>
-    <li>
-      <i><code>n-estimators</code>: number of trees to make (default 100);</i>
-      <i><code>max_features</code>: number of features to consider at each split;</i>
-      <i><code>max_depth</code>: maximum number of nodes in each tree;</i>
-      <i><code>min_samples_split</code> number of samples split off by each node.</i>
-    </li>
+    <ul>
+      <li><code>n-estimators</code>: number of trees to make (default 100);</li>
+      <li><code>max_features</code>: number of features to consider at each split;</li>
+      <li><code>max_depth</code>: maximum number of nodes in each tree;</li>
+      <li><code>min_samples_split</code> number of samples split off by each node.</li>
+    </ul>
     <p>
       Setting <code>max_depth</code> to <code>None</code> and <code>min_samples_split</code> to 2 results in fully developed trees (all samples split, trees as large as it takes).
       Standard practice is to set max_features to <code>'sqrt'</code> for classification problems like ours.
