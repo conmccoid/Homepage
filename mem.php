@@ -80,8 +80,8 @@ dd {
     </p>
     <p>To get the essential components of a MIDI file, one can run the following code snippet.</p>
     <pre><code class="language-python">
-      import music21 as m21
-      midi_data=m21.converter.parse('mz_311_1.mid')
+      import music21
+      midi_data=music21.converter.parse('mz_311_1.mid')
     </code></pre>
     <p>This extracts information from the MIDI file and puts it into the format for music21. From there, we can pick
       out specific measures: <code>midi_data.measure(144).show('text')</code>. This returns all information found in
@@ -192,9 +192,8 @@ dd {
       import music21
       X=[]; y=[]; i=0;
       for ind in ['311','330','331','332','333','545','570']:
-      # for ind in ['311']:
-          i+=1
           for j in ['_1','_2','_3']:
+              i+=1
               pitches_output=read_noteGroups('mozart/mz_'+ind+j+'.mid',20)
               num_output=len(pitches_output)
               for pitch_out in pitches_output:
@@ -217,20 +216,20 @@ dd {
     </p>
     <p>There are four main parameters to tweak for this model:</p>
     <li>
-      <i>n-estimators: number of trees to make (default 100);</i>
-      <i>max_features: number of features to consider at each split;</i>
-      <i>max_depth: maximum number of nodes in each tree;</i>
-      <i>min_samples_split: number of samples split off by each node.</i>
+      <i><code>n-estimators</code>: number of trees to make (default 100);</i>
+      <i><code>max_features</code>: number of features to consider at each split;</i>
+      <i><code>max_depth</code>: maximum number of nodes in each tree;</i>
+      <i><code>min_samples_split</code> number of samples split off by each node.</i>
     </li>
     <p>
-      Setting max_depth to None and min_samples_split to 2 results in fully developed trees (all samples split, trees as large as it takes).
-      Standard practice is to set max_features to 'sqrt' for classification problems like ours.
+      Setting <code>max_depth</code> to <code>None</code> and <code>min_samples_split</code> to 2 results in fully developed trees (all samples split, trees as large as it takes).
+      Standard practice is to set max_features to <code>'sqrt'</code> for classification problems like ours.
     </p>
     <p>
       To use RandomForestClassifier, start by initializing the classifier, then feeding it data.
-      The list of datum is stored in `X`, an array with two dimensions.
-      Each row (first dimension) of `X` is a datum, and each element in this row (second dimension) is a feature of the datum.
-      The list of classifications of each datum is stored in `y`, a 1D array, so that the i-th element in `y` classifies the i-th row of `X`.
+      The list of datum is stored in <code>X</code>, an array with two dimensions.
+      Each row (first dimension) of <code>X</code> is a datum, and each element in this row (second dimension) is a feature of the datum.
+      The list of classifications of each datum is stored in <code>y</code>, a 1D array, so that the i-th element in <code>y</code> classifies the i-th row of <code>X</code>.
     </p>
     <p>Data is first split into training and testing sets.</p>
     <pre><code>
@@ -259,8 +258,27 @@ dd {
       I chose to take sequences of 20 notes, resulting in several thousand sequences.
       These had 60 features.
       The resulting score was 87.3%.
-      I found that the choice of `max_features` was particularly critical to the accuracy.
+      I found that the choice of <code>max_features</code> was particularly critical to the accuracy.
       Even taking longer note sequences, if the classifier could not collect more features, then it was as if these sequences were signficantly shorter.
+    </p>
+  
+  <h3>Mistakes I've made along the way</h3>
+    <p>
+      One of the biggest blunders I made was my first attempt to annotate the data and encode the feature space.
+      I originally tried to split each song into measures, keeping chords whole.
+      The problem with this was the number of notes and chords in each measure differs.
+      What, then, is the relevant feature space?
+      I looked only at the collection of notes for a given measure, ignoring duration and relative offset, then assigned a bit to each note.
+      If the note was present in the measure, then the relevant bit was set to 1, and 0 otherwise.
+      The size of the feature space would then be the number of unique notes in the collection of songs.
+      This ended up being too large, so I also threw out octaves, leaving me with 12 features per measure.
+      This was not effective, as it reduced or trivialized much of the information.
+    </p>
+    <p>
+      It also took me a while to realize the importance of the <code>max_features</code> parameter when initializing the classifier.
+      I originally thought that I only needed to increase the size of the note sequences, n, to get enough unique information about them.
+      But without a corresponding increase in <code>max_features</code>, the classifier couldn't recognize the increase in this size.
+      It was only when I switched to using a <code>max_features</code> proportional to n did I see marked improvement in the classifier's accuracy.
     </p>
 </div>
 
