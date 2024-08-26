@@ -29,8 +29,8 @@ RebeccaPurple
 
 	--colour-maintheme: MediumVioletRed;
 	--colour-motif: LavenderBlush;
-	/* --colour-footer: #212F3C; */
-	--colour-footer: DimGray;
+	--colour-footer: #212F3C;
+	--colour-footer-text: DimGray;
 	--colour-link: LightSteelBlue;
 	--colour-visited: lightcoral;
 	--width-sidebar: 300px;
@@ -126,6 +126,7 @@ RebeccaPurple
 	position: absolute; /* position relative to .main */
 	bottom: 0; /* fix to bottom of content */
 	background-color: var(--colour-footer);
+	color: var(--colour-footer-text);
 	overflow: hidden; /* cut off so rest doesn't flow under */
 }
 

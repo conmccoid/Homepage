@@ -85,6 +85,17 @@ In this way, presentations will be organized first by type, then by conference, 
 Some presentations are made using reveal.js.
 These will be kept in a separate Github repo, with links to its Github Pages on the presentations page.
 
+# Branding
+Most branding decisions are made in the `custom.css` file, which also lists other options should the need arise.
+
+### Colour scheme
+The primary colour of the website is Medium Violet Red.
+This is used in the header and the sidebar.
+It is contrasted against a motif of Lavender Blush.
+
+The secondary colour, used in the footer, is Dim Gray.
+This had to be changed while at McMaster as the McMaster logo uses a gray too close to this shade to be distinguished.
+
 ## Tutorials
 ### Instructions for creating TIKZ_...svg files
 
