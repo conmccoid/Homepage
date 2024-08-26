@@ -137,7 +137,7 @@ RebeccaPurple
 
 .bottombox-column {
 	float: left;
-	color: black;
+	color: var(--colour-footer-text);
 	padding: 20px;
 	text-align: left;
 }
