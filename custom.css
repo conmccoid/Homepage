@@ -26,11 +26,16 @@ RebeccaPurple
 	--colour-lavalmain: #e30513;
 	--colour-lavalsub: #ffc103;
 	--colour-lavalbg: #d9d9d9;
+	--colour-macmain: #7a003c;
+	--colour-macsub: #fdbf57;
+	--colour-macbg: #495965;
 
 	--colour-maintheme: MediumVioletRed;
 	--colour-motif: LavenderBlush;
-	--colour-footer: #212F3C;
-	--colour-footer-text: DimGray;
+	/* --colour-footer: #212F3C; */
+	/* --colour-footer: DimGray; */
+	--colour-footer: var(--colour-macmain);
+	--colour-footer-text: var(--colour-macbg);
 	--colour-link: LightSteelBlue;
 	--colour-visited: lightcoral;
 	--width-sidebar: 300px;
