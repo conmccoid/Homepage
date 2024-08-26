@@ -95,6 +95,7 @@ It is contrasted against a motif of Lavender Blush.
 
 The secondary colour, used in the footer, is Dim Gray.
 This had to be changed while at McMaster as the McMaster logo uses a gray too close to this shade to be distinguished.
+Text font has been changed to match that of the McMaster logo and the background darkened.
 
 ## Tutorials
 ### Instructions for creating TIKZ_...svg files
