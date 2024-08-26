@@ -32,10 +32,8 @@ RebeccaPurple
 
 	--colour-maintheme: MediumVioletRed;
 	--colour-motif: LavenderBlush;
-	/* --colour-footer: #212F3C; */
-	/* --colour-footer: DimGray; */
-	--colour-footer: var(--colour-macmain);
-	--colour-footer-text: var(--colour-macbg);
+	--colour-footer: #212F3C;
+	--colour-footer-text: DimGray;
 	--colour-link: LightSteelBlue;
 	--colour-visited: lightcoral;
 	--width-sidebar: 300px;
