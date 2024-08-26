@@ -49,26 +49,30 @@ dd {
 <h3>Research Interests</h3>
 
 <dl>
-  <dt>Spectral collocation</dt>
-  <dd>During my masters at Simon Fraser University I worked on pseudospectral integration matrices.
-    These matrices are inverses of differentiation matrices constructed using collocation methods.
-    I am currently working on extending these ideas to invert more general linear operators.
-  </dd>
-  <dd>I have also helped develop an algorithm for improving the accuracy for these methods
-    in the context of singularly perturbed two-point boundary value problems (see <a href="publications.php" title="Publications">Publicatons</a>).
-  </dd>
+  <dt>Phase field model for fractures</dt>
+  <dd>Currently, I am working with Blaise Bourdin at McMaster University to speed up
+    computation time of the phase field model for fractures.</dd>
 
   <dt>Domain decomposition</dt>
-  <dd>My PhD work at the University of Geneva involves domain decomposition.
-    I am investigating examples of bad behaviour in Schwarz methods accelerated by the Newton-Raphson method (see <a href="publications.php" title="Publications">Presentations</a>).
+  <dd>My PhD work at the University of Geneva with Martin Gander involved domain decomposition.
+    I investigated examples of bad behaviour in Schwarz methods accelerated by the Newton-Raphson method (see <a href="publications.php" title="Publications">Presentations</a>).
   </dd>
-  <dd>I am also constructing algorithms for the intersection of 2D and 3D objects
+  <dd>I also constructed algorithms for the intersection of 2D and 3D objects
     to assist in solving grid transfer problems.
     Our paper on the intersection of triangles is published in Transactions on Mathematical Software, an ACM journal.
     The intersection of tetrahedra and higher dimensional simplices are in progress.
   </dd>
   <dd>
-    At the Universit&eacute; Laval I am developing algorithms for adaptively optimising existing Schwarz methods.
+    At the Universit&eacute; Laval I developed algorithms for adaptively optimising existing Schwarz methods with Felix Kwok.
+  </dd>
+
+  <dt>Spectral collocation</dt>
+  <dd>During my masters at Simon Fraser University I worked with Manfred Trummer on pseudospectral integration matrices.
+    These matrices are inverses of differentiation matrices constructed using collocation methods.
+    I am currently working on extending these ideas to invert more general linear operators.
+  </dd>
+  <dd>I have also helped develop an algorithm for improving the accuracy for these methods
+    in the context of singularly perturbed two-point boundary value problems (see <a href="publications.php" title="Publications">Publicatons</a>).
   </dd>
 </dl>
 
