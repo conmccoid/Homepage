@@ -89,6 +89,12 @@ These will be kept in a separate Github repo, with links to its Github Pages on 
 Most branding decisions are made in the `custom.css` file, which also lists other options should the need arise.
 
 ### Colour scheme
+| Scheme component | Colour name | RGB |
+|------------------|-------------|-----|
+| Primary | <span style="background-color:MediumVioletRed;">Medium Violet Red</span> | 199, 21, 133 |
+| Motif | <span style="background-color:LavenderBlush;">Lavender Blush</span> | 255, 240, 245 |
+| Secondary | <span style="background-color:DimGray;">Dim Gray</span> | 105, 105, 105 |
+
 The primary colour of the website is Medium Violet Red.
 This is used in the header and the sidebar.
 It is contrasted against a motif of Lavender Blush.
