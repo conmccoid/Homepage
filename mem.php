@@ -75,7 +75,7 @@ dd {
     </p>
     <h4>Music analysis toolkit</h4>
     <p>While scikit-learn will give me the machine learning tools I need, I'm also going to need software to analyze
-      the music itself. For that, I'm using <a href="https://web.mit.edu/music21/doc/">music21</a>, an open-source Python toolkit from MIT. This manipulates
+      the music itself. For that, I'm using <a href="https://www.music21.org/music21docs/">music21</a>, an open-source Python toolkit from MIT. This manipulates
       MIDI files, letting me dissect the pieces into their features.
     </p>
     <p>To get the essential components of a MIDI file, one can run the following code snippet.</p>
@@ -85,7 +85,7 @@ dd {
     </code></pre>
     <p>This extracts information from the MIDI file and puts it into the format for music21. From there, we can pick
       out specific measures: <code>midi_data.measure(144).show('text')</code>. This returns all information found in
-      measure 344 of this piece, including instruments played, clef, key, tempo, meter, and list of notes.
+      measure 144 of this piece, including instruments played, clef, key, tempo, meter, and list of notes.
     </p>
     <p>The format for music21 stores information as streams. These streams contain all other objects relevant to this
       project. The data extracted from the MIDI files in the dataset is stored as scores. Each of these scores is
@@ -171,7 +171,7 @@ dd {
       To preprocess the dataset for this portion of the project, we'll need to split up each song, classify each portion, then feed it into one of scikit-learn's classifiers.
       The following function parses an input song and splits up its collection of notes into sequences of n notes using the `read_chord()` function from earlier.
     </p>
-    <pre><code class=language-ptyhon">
+    <pre><code class="language-python">
     def read_noteGroups(file,n):
       midi_data=music21.converter.parse(file)
       data=midi_data.recurse().notes
