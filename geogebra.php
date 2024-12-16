@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="custom.css">
   <link href="icons/css/all.css" rel="stylesheet">
   <link href="icons/Academicons/css/academicons.css" rel="stylesheet">
+  <title>GeoGebra demo of PANG2</title>
 <style>
 :root{
   --colour-page: var(--colour-maintheme);
