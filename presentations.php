@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="custom.css">
   <link href="icons/css/all.css" rel="stylesheet">
   <link href="icons/Academicons/css/academicons.css" rel="stylesheet">
+  <link rel="icon" href="img/McMaster_icon.png">
   <title>Presentations</title>
 <style>
 :root{

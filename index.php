@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="custom.css">
   <link href="icons/css/all.css" rel="stylesheet">
   <link href="icons/Academicons/css/academicons.css" rel="stylesheet">
-  <link rel="icon" href="img/McMaster_logo.png">
+  <link rel="icon" href="img/McMaster_icon.png">
   <title>Conor McCoid</title>
 <style>
 :root{
