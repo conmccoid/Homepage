@@ -45,7 +45,7 @@ dd {
 
 <div class="main-content">
 <p>Welcome to my personal website.
-  My name is Conor McCoid and I am a postdoctoral researcher at the Universit&eacute; Laval.
+  My name is Conor McCoid and I am a postdoctoral researcher at McMaster University.
   You will find here a collection of my published works, presentations and ongoing projects.</p>
 
 <h3>Research Interests</h3>
