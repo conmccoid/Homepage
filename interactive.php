@@ -47,6 +47,12 @@ dd {
     <h3><a href="geogebra.php">GeoGebra demo of PANG2</a></h3>
     <h3><a href="mem.php">Mozart Ex Machina</a></h3>
       <p>Machine learning prototyping project</p>
+
+    <h2>Test suites from publications</h2>
+    <ul>
+      <li><a href="interact/TetIA/TestSuite.zip">Tetrahedral intersection algorithm</a></li>
+      <li><a href="interact/AOSM/TestSuite.zip">Adaptive optimized Schwarz method</a></li>
+    </ul>
 </div>
 
 <?php require_once "footer.php" ?>
