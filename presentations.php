@@ -48,6 +48,12 @@ dd {
     <h1>Presentations</h1>
 	<h3>Talks</h3>
     <dl>
+        <dt><a href="ubs/TALK_SONAD_2025_FP.pdf">Accelerating fixed point iterations with Newton’s method</a>,
+          South Ontario Numerical Analysis Day, 2025</dt>
+        <dd>This talk presents non-standard analysis on combining fixed point iterations with Newton's method.
+          It is presented as accelerating fixed point iterations with Newton, but one can equivalently view it as preconditioning Newton with some iterative method.
+        </dd>
+        
         <dt><a href="https://conmccoid.github.io/Presentations/AOSM.html">Adaptive optimised Schwarz methods</a>,
           with Felix Kwok</dt>
         <dd>Optimising Schwarz methods can be expensive and time-consuming. AOSMs optimise adaptively, which can be done without
